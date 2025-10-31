@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Unicheck - Plataforma de Suporte Universitário</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/inicio.css">
+    <link rel="stylesheet" href="/css/carousel.css">
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/universidade.css">
+    <link rel="stylesheet" href="/css/resumo.css">
+    <link rel="stylesheet" href="/css/faq.css">
+    <link rel="stylesheet" href="/css/footer.css">
+</head>
+
+
+<body>
+
+    <header class="main-header">
+        <div class="menu main-content">
+            <div class="menu-content">
+                <a href="#inicio" title="Voltar para a página inicial">
+                    <img src="/img/logo.foto.png" alt="Logo UniCheck" style="width: 20rem;">
+                </a>
+
+                <nav class="nav-links" aria-label="Navegação Principal do Site">
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre nós</a></li>
+                        <li><a href="#universidade">Universidades</a></li>
+                        <li><a href="#resumo">Resumo</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </nav>
+
+                <div class="nav-buttons">
+                    <ul>
+                        <li class="unico"><a href="/login_cadastro.html">Entrar</a></li>
+                        <li><a href="/login_cadastro.html">Cadastro</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="inicio" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <p id="linha"> =============== =============== =============== </p>
+                
+                <h2>Calouros, o jogo virou! Bem-Vindo à plataforma que irá te auxiliar a dominar a universidade.</h2>
+
+                <p>Esqueça a ansiedade e a confusão. Criamos o Unicheck para ser o seu atalho para o sucesso! Com um clique, você
+                    tem acesso a checklists personalizados, mapas do campus e todas as dicas que só quem já viveu a faculdade
+                    conhece. Sua jornada não precisa ser um perrengue. Chegou a hora de ter controle total.</p>
+            </div>
+
+            <div class="intro-img">
+                <img src="/img/fundo.inicio.png" alt="Jovem segurando notebook, representando o sucesso acadêmico.">
+            </div>
+
+            <button class="botao">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <p><a href="#cadastro">Comece sua jornada!</a></p>
+            </button>
+        </div>
+    </section>
+
+
+    <div class="carousel-wrapper">
+        <div class="blur-bg1"></div>
+        <section class="carousel-grid-section section2 main-content" aria-label="Principais Recursos da Plataforma">
+
+            <div class="carousel-grid-container">
+                <div class="carousel-card">
+                    <div class="card-content">
+                        <h3>- Checklist Dinâmico -</h3>
+                        <p>O checklist do Unicheck auxilia os alunos nas demandas acadêmicas ao fornecer um passo a passo organizado
+                            para o uso da plataforma...</p>
+                    </div>
+                    <img src="/img/check.png" alt="Ícone de check mark." class="img-card">
+                </div>
+
+                <div class="carousel-card">
+                    <div class="card-content">
+                        <h3> - Dicas - </h3>
+                        <p>O UniCheck oferece dicas estratégicas focadas em aprimoramento contínuo, indicando os melhores cursos e
+                            plataformas gratuitas para universitários...</p>
+                    </div>
+                    <img src="/img/conselho.png" alt="Ícone de lâmpada e conselho." class="img-card">
+                </div>
+                
+                <div class="carousel-card">
+                    <div class="card-content">
+                        <h3>- Networking -</h3>
+                        <p>O UniCheck oferece uma Comunidade no Discord para acolher todos os alunos, criando um espaço seguro...</p>
+                    </div>
+                    <img src="/img/conexao-global.png" alt="Ícone de conexão global/rede." class="img-card">
+                </div>
+
+                <div class="carousel-card">
+                    <div class="card-content">
+                        <h3> - Cursos - </h3>
+                        <p>O UniCheck te apoia com cursos e trilhas de aprendizado de alta qualidade, indicando as melhores
+                            plataformas externas gratuitas...</p>
+                    </div>
+                    <img src="/img/curso-online.png" alt="Ícone de curso online/certificado." class="img-card">
+                </div>
+
+                <div class="carousel-card">
+                    <div class="card-content">
+                        <h3>- Universidades - </h3>
+                        <p>O UniCheck garante a adequação do seu trabalho, pois o funcionamento e os checklists variam para cada
+                            instituição de ensino...</p>
+                    </div>
+                    <img src="/img/parabens.png" alt="Ícone de parabéns/sucesso." class="img-card">
+                </div>
+            </div>
+        </section>
+
+        <button class="card-button prev-button" aria-label="Slide anterior">&#10094;</button>
+        <button class="card-button next-button" aria-label="Próximo slide">&#10095;</button>
+    </div>
+
+
+    <section id="sobre" class="main-black section">
+        <div class="main-content intro-content2">
+            <div class="blur-bg3"></div>
+            <div class="blur-bg4"></div>
+
+            <div class="intro-img2">
+                <img src="/img/jovem-duvida.png" alt="Homem com expressão de dúvida, resolvido pela plataforma.">
+            </div>
+
+            <div class="intro-text-content2">
+                <p id="linha2"> =============== =============== =============== </p>
+
+                <h2>Hub Centralizado para uma Jornada Acadêmica Segura e Organizada</h2>
+                <h3>UniCheck: Sua Plataforma Completa de Suporte Universitário</h3>
+
+                <p><b id="icon">&rarr;</b> A UniCheck é uma EdTech que oferece uma plataforma completa de
+                    suporte universitário.
+                    Inicialmente um checklist para calouros, evoluiu para ser um Hub Centralizado de Informações e Serviços
+                    Acadêmicos.
+                    Seu objetivo é dar tranquilidade aos estudantes com um suporte modular e adaptável.
+                    A plataforma atua como um checklist dinâmico que facilita a ambientação e o acesso a cronogramas e informações
+                    do campus.
+                </p>
+
+            </div>
+
+            <a href="#resumo" class="botao2">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <p>Venha ver mais sobre...</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <section id="universidade" class="faculdade-bg section">
+        <div class="main-faculdade main-content"> <div class="blur-bg5"></div>
+
+            <div class="info-box">
+                <h2>Acesse a rede completa de universidades onde o Unicheck atua.</h2>
+                <p>Visualize as informações detalhadas de cada
+                    instituição e explore os dashboards exclusivos para ter uma visão abrangente do seu impacto...</p>
+            </div>
+
+            <div class="img-box">
+                <ul class="imagens-li">
+                    <li class="img1">
+                        <img src="/img/unisales.logo-removebg-preview.png" alt="Logo da Universidade Unisales">
+                        <div class="border">
+                            <h5>Alunos ativos</h5>
+                            <h6><b class="alunos-contador">4.850</b></h6>
+                            <h5>Tempo Médio de Uso (Diário)</h5>
+                            <h6><b>2,1 Horas</b></h6>
+                            <h5>Nível de Satisfação</h5>
+                            <h6><b style="color:goldenrod; text-shadow: 0 0.05rem 0.1875rem rgba(119, 117, 117, 0.451);">&#9733;&#9733;&#9733;&#9733;&#9734;</b></h6>
+
+                            <p>"A Universidade <b style="color: var(--secundary-color);">UNISALES</b> prospera em engajamento digital,
+                                com alunos dedicando mais de duas horas diárias..."</p>
+                        </div>
+                    </li>
+
+                    <li class="img-2">
+                        <img src="img/logo.aleatoria2.png" alt="Logo da Universidade Radtech">
+                        <div class="border2">
+                            <h5>Alunos ativos</h5>
+                            <h6><b class="alunos-contador">6.310</b></h6>
+                            <h5>Tempo Médio de Uso (Diário)</h5>
+                            <h6><b>1,5 Horas</b></h6>
+                            <h5>Nível de Satisfação</h5>
+                            <h6><b style="color:goldenrod; text-shadow: 0 0.05rem 0.1875rem rgba(119, 117, 117, 0.451);">&#9733;&#9733;&#9733;&#9733;&#9733;</b></h6>
+
+                            <p>"Com mais de 6 mil mentes acessando diariamente, a Universidade <b
+                                    style="color: var(--secundary-color);">REDTECH</b> consolidou
+                                sua presença digital no bolso dos alunos..."</p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="resumo" class="section-resumo section">
+        <div class="main-content resumo-content">
+            <div class="resumo-text-content">
+                <h2 style="margin-left: -10rem;">✅ Checklist Diário de Sucesso Acadêmico</h2>
+
+                <p>O Checklist Diário é a sua ferramenta essencial para navegar com sucesso pelo ambiente universitário. Ele
+                    oferece um resumo breve e prático, guiando você através do passo a passo das suas obrigações acadêmicas e do
+                    uso das plataformas digitais que você irá utilizar...</p>
+            </div>
+
+            <div class="resumo-img">
+                <img id="img1" src="/img/bibliotecaV.png" alt="Logo da Biblioteca Virtual">
+                <img id="img2" src="/img/spotify.png" alt="Logo do Spotify">
+                <img id="img3" src="/img/outlook.png" alt="Logo do Outlook">
+                <img id="img4" src="/img/MicrosoftT.png" alt="Logo do Microsoft Teams">
+                <img id="img5" src="/img/platafromaA.png" alt="Logo da Plataforma A">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section-resumo section">
+        <div class="main-content resumo-content2">
+            <div class="resumo-img2">
+                <img src="/img/fundação-bradesco.png" alt="Logo da Fundação Bradesco">
+            </div>
+
+            <div class="resumo-text-content2">
+                <h2>💡 Dicas Essenciais para os Estudantes</h2>
+
+                <p>As dicas Essenciais é um recurso valioso para impulsionar sua vida acadêmica e profissional. Detalhamos
+                    informações cruciais sobre plataformas e softwares que oferecem descontos exclusivos ou gratuidade total para
+                    estudantes com conta institucional...</p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-resumo section">
+        <div class="main-content resumo-content">
+            <div class="resumo-text-content">
+                <h2 style="margin-left: -10rem;">🤝 Networking e Comunidade</h2>
+
+                <p>Enfatizamos a importância de se conectar a professores e profissionais, além de utilizar nossa plataforma.
+                    Destacamos o Discord da Comunidade Unicheck como o hub central para você se conectar instantaneamente com
+                    outros estudantes, trocar experiências e descobrir oportunidades exclusivas de projetos...</p>
+            </div>
+
+            <div class="resumo-img">
+                <a href="https://discord.gg/uUURjuhQ" target="_blank" title="Acesse a Comunidade UniCheck no Discord">
+                    <img id="img-discord" src="/img/Discord-logo.png" alt="Logo do Discord.">
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section-resumo section">
+        <div class="main-content resumo-content2">
+            <div class="resumo-img2">
+                <img id="chapeu-universidade" src="/img/chapeu-univerdidade.webp" alt="Chapéu de formatura em cima de livros.">
+            </div>
+
+            <div class="resumo-text-content2">
+                <h2>🎓 Experiência Universitária</h2>
+
+                <p>Nossa plataforma foi desenvolvida pensando na singularidade da sua jornada acadêmica. Diferente de soluções
+                    genéricas, nós garantimos que o Unicheck se padroniza integralmente de acordo com as diretrizes e o
+                    ecossistema digital da sua universidade...</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="faq" class="section-faq section">
+        <div class="main-content-faq main-content"> <div class="blur-bg5"></div>
+
+            <div class="faq-left">
+                <h2>FAQ – Perguntas Frequentes</h2>
+                <form class="formulario-faq">
+                    <div class="email-faq">
+                        <label for="email">♦ Email</label> <input type="email" id="email" name="email-usuario" placeholder="seu.email@exemplo.com" required>
+                    </div>
+
+                    <div class="text-duvida">
+                        <label for="duvidas">♦ Deixe sua dúvida abaixo</label>
+                        <textarea name="texto-duvida" id="duvidas" placeholder="Adicione sua dúvida aqui..." required></textarea>
+                    </div>
+
+                    <div class="button-enviar">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+
+            <div class="faq-right" role="tablist">
+                
+                <div class="faq-item">
+                    <button class="faq-question" type="button" aria-expanded="false" aria-controls="answer-1" id="question-1">
+                        <h6>1. O que é o UniCheck?</h6>
+                        <span class="arrow" aria-hidden="true">❯</span>
+                    </button>
+                    <div class="faq-answer" id="answer-1" role="region" aria-labelledby="question-1">
+                        <p>O UniCheck é uma plataforma interativa que ajuda calouros universitários a se organizarem
+                            nos primeiros passos da vida acadêmica. Funciona como um checklist gamificado com tarefas
+                            essenciais, dicas úteis e até um mascote que te acompanha na jornada!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button" aria-expanded="false" aria-controls="answer-2" id="question-2">
+                        <h6>2. Como o UniCheck pode me ajudar na faculdade?</h6>
+                        <span class="arrow" aria-hidden="true">❯</span>
+                    </button>
+                    <div class="faq-answer" id="answer-2" role="region" aria-labelledby="question-2">
+                        <p>Ele oferece um guia passo a passo com tarefas como matrícula, emissão de documentos, integração ao
+                            ambiente virtual e muito mais. Cada tarefa concluída rende pontos e ajuda você a avançar no seu progresso
+                            universitário.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button" aria-expanded="false" aria-controls="answer-3" id="question-3">
+                        <h6>3. Preciso fazer login ou me cadastrar para usar?</h6>
+                        <span class="arrow" aria-hidden="true">❯</span>
+                    </button>
+                    <div class="faq-answer" id="answer-3" role="region" aria-labelledby="question-3">
+                        <p>Sim! O cadastro é rápido e gratuito — ele permite que você salve seu progresso e acompanhe
+                            suas conquistas.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" type="button" aria-expanded="false" aria-controls="answer-4" id="question-4">
+                        <h6>4. O UniCheck funciona no celular?</h6>
+                        <span class="arrow" aria-hidden="true">❯</span>
+                    </button>
+                    <div class="faq-answer" id="answer-4" role="region" aria-labelledby="question-4">
+                        <p>Sim, o UniCheck é totalmente responsivo e funciona tanto no celular quanto no computador.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" type="button" aria-expanded="false" aria-controls="answer-5" id="question-5">
+                        <h6>5. O UniCheck é gratuito?</h6>
+                        <span class="arrow" aria-hidden="true">❯</span>
+                    </button>
+                    <div class="faq-answer" id="answer-5" role="region" aria-labelledby="question-5">
+                        <p>Sim! Todo o conteúdo e as ferramentas básicas são gratuitas, e você pode usar sem limitações.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            
+            <div class="footer-col navegacao">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#universidade">Universidades</a></li>
+                    <li><a href="#resumo">Resumo</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contato">
+                <h4>Fale Conosco</h4>
+                <p>Email: <a href="mailto:unicheck@outlook.com">unicheck@outlook.com</a></p>
+                <p>Telefone: (99) 99999-9999</p>
+                
+                <div class="redes-sociais">
+                    <a href="#" class="social-icon instagram" title="Nos siga no Instagram">
+                        <img src="/img/Instagram_logo.webp" alt="Logo do Instagram">
+                    </a> 
+                    <a href="https://discord.gg/uUURjuhQ" class="social-icon discord" target="_blank" title="Acesse a Comunidade no Discord">
+                        <img src="img/Discord-logo.png" alt="Logo do Discord">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col legal">
+                <h4>Mantenha-se Atualizado</h4>
+                <form action="#" method="POST" class="newsletter-form">
+                    <input type="email" placeholder="Seu melhor e-mail" required aria-label="E-mail para newsletter">
+                    <button type="submit">Receber</button>
+                </form>
+                
+                <p class="copyright">
+                    &copy; <span id="current-year"></span> Seu Unicheck. Todos os direitos reservados.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script>
+        // Script simples para garantir que o ano do copyright esteja sempre atualizado
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    <script src="/js/script.js"></script>
+
+
+</body>
+
+</html>

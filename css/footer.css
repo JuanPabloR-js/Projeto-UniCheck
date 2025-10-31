@@ -1,0 +1,112 @@
+
+
+
+
+
+
+.site-footer {
+    background-color: rgba(0, 0, 0, 0.949); 
+    color: white; 
+    padding: 3rem 0; 
+}
+
+.site-footer .container {
+    max-width: 105rem; 
+    margin: 0 auto;
+    padding: 1rem 1.5rem; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 5rem;
+}
+
+/* Estilo para cada Coluna */
+.footer-col {
+    margin-top: 2rem;
+    width: 20%; 
+}
+
+
+.footer-col h4 {
+    font-size: 1.35rem; 
+    color: white;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.125rem solid #626262a8;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 0.7rem;
+}
+
+.footer-col a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 1.1rem; 
+}
+
+.footer-col a:hover {
+    color: var(--secundary-color); /* Efeito hover azul claro */
+}
+
+/* Estilos de Contato */
+.contato p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.redes-sociais {
+    margin-top: 1.5rem;
+}
+
+.social-icon img{
+    display: inline-block;
+    width: auto; 
+    height: 2.5rem;
+    margin-right: 0.5rem;
+}
+
+
+
+
+/* Newsletter e Legal */
+.newsletter-form input[type="email"] {
+    padding: 1rem; 
+    border: none;
+    border-radius: 0.3125rem; /* 5px */
+    margin-bottom: 0.625rem;
+    width: 65%;
+    box-sizing: border-box;
+}
+
+.newsletter-form button {
+    padding: 1rem;
+    background-color: var(--terciary-color);
+    color: black;
+    border: none;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    width: 35%;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: var(--secundary-color);
+}
+
+.copyright {
+    margin-top: 1.5rem;
+    font-size: 0.975rem; 
+    color: #bdc3c7;
+}
+
+
+
+
+

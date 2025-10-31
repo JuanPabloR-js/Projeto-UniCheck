@@ -1,0 +1,307 @@
+:root {
+    --white-color: white;
+    --gap: 5rem;
+    --primary-color: black;
+    --secundary-color: #6CBDB5;
+    --terciary-color: #93CCC6;
+}
+
+/* Base */
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 2.5rem;
+    line-height: 1.5;
+
+}
+
+/* Headings */
+h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+
+}
+
+h4 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+h6 {
+    font-size: 1.7rem;
+}
+
+/* Layout Helpers */
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 10rem var(--gap);
+}
+
+.white-bg {
+    background: var(--white-color);
+}
+
+
+.section {
+    min-height: 100vh;
+}
+
+.section2 {
+    max-width: 100%;
+    height: 42vh;
+}
+
+.main-bg {
+    padding-top: 5rem;
+    background-image: url('../img/main.bg.svg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.main-black {
+    min-height: 100vh;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    background: linear-gradient(-244deg,
+            var(--secundary-color),
+            var(--primary-color),
+            var(--primary-color));
+    background-size: 110% 280%;
+    animation: gradientShift 7s ease infinite;
+}
+
+@keyframes gradientShift {
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    0% {
+        background-position: 0% 50%;
+    }
+}
+
+.section-resumo {
+    min-height: 50vh;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    background: linear-gradient(-90deg,
+            var(--primary-color)45%,
+            var(--secundary-color));
+
+}
+
+
+
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    z-index: 10000000000;
+    margin: 1.5rem 5rem;
+    padding: 0.1rem 5rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+    border-radius: 3rem;
+    box-shadow: 0 0.4rem 1.5rem rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-out;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 0.8rem;
+}
+
+/* Nav Links */
+.nav-links ul {
+    display: flex;
+    gap: var(--gap);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--white-color);
+    padding-bottom: 0.5rem;
+    text-decoration: none;
+    text-shadow: 0 0 0.3rem var(--terciary-color);
+    transition:
+        color 0.3s ease-in-out,
+        text-shadow 0.5s ease-in-out,
+        transform 0.5s ease-out;
+}
+
+.nav-links ul li a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0%;
+    height: 0.25rem;
+    background-color: var(--terciary-color);
+    transform: translateX(-50%);
+    transition: width 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.nav-links li a:hover {
+    color: var(--terciary-color);
+    text-shadow: 0 0 3rem var(--terciary-color);
+    transform: translateY(-0.2rem);
+}
+
+.nav-links ul li a:hover::after {
+    width: 100%;
+}
+
+/* Nav Buttons */
+.nav-buttons ul {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-buttons li a {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1rem 5.5rem;
+    color: var(--white-color);
+    background-color: transparent;
+    border: 0.1rem solid var(--white-color);
+    border-radius: 1rem;
+    text-decoration: none;
+    overflow: hidden;
+    box-shadow: 0 0.4rem 1.6rem rgba(0, 0, 0, 0.3);
+    transition:
+        color 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+        border-color 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+        transform 0.5s ease-out,
+        box-shadow 0.5s ease-out;
+}
+
+.nav-buttons li a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--terciary-color);
+    border-radius: 0.9rem;
+    z-index: -1;
+    transition: width 0.9s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.nav-buttons li a:hover {
+    color: var(--primary-color);
+    border-color: var(--terciary-color);
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1.6rem 4rem rgba(0, 0, 0, 0.3);
+}
+
+.nav-buttons li a:hover::before {
+    width: 100%;
+}
+
+.nav-buttons li:first-child a {
+    font-size: 1..1rem;
+    padding: 1rem 2.5rem;
+}
+
+.menu.hide {
+    top: -200px; 
+    transition: top 0.3s ease-out;
+}
+
+/* ========================================================== */
+/* ====== CLASSES CSS PARA ANIMAÇÃO ON SCROLL (AOS) ====== */
+/* ========================================================== */
+
+/* ESTADO INICIAL (Oculto/Deslocado) */
+.animate-on-scroll {
+    opacity: 0;
+    transition: 
+        opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* 1. Animação de FADE IN (para textos e elementos menores) */
+.fade-in {
+    transform: none; /* Não tem deslocamento, só opacidade */
+}
+
+/* 2. Animação de SLIDE UP (para blocos de conteúdo) */
+.slide-up {
+    transform: translateY(4rem);
+}
+
+/* ESTADO FINAL (Visível/Posição Normal) */
+.animated {
+    opacity: 1;
+    transform: translateY(0) rotate(0); /* Reseta o slide-up para a posição original */
+}
+
+/* ANIMAÇÃO EXTRA para IMAGENS (opcional) */
+.image-zoom {
+    transform: scale(0.85);
+}
+
+.animated.image-zoom {
+    transform: scale(1);
+}

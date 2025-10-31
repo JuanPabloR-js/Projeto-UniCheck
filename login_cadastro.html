@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Unicheck - Login & Cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="/CSS_login/login_cadastro.css">
+</head>
+<body>
+
+<canvas id="canvas"></canvas>
+
+<a href="/index.html" class="back-btn-link"><button class="back-btn">⬅ Voltar</button></a>
+
+<div class="container" id="cardContainer">
+    <div class="card front" id="loginCard">
+        <img src="/img/bola1.png" alt="Logo Unicheck" class="logo-unicheck">
+        <h1 id="tituloLogin">LOGIN</h1>
+        <input type="email" placeholder="E-mail (ex: teste@gmail.com)" id="loginEmail" required>
+        <input type="text" placeholder="Registro Acadêmico" id="matriculasenha" required>
+        <input type="password" placeholder="Senha" id="loginSenha" required>
+        <div class="switch-senha"><span onclick="flipCard()">Esqueceu a senha?</span></div>
+        <button onclick="fazerLogin()">Entrar</button>
+        <div class="switch">Não tem conta? <span onclick="flipCard()">Cadastre-se</span></div>
+    </div>
+
+    <div class="card back" id="cadastroCard">
+        <h1 id="tituloCadastro">CADASTRO</h1>
+        <input type="text" placeholder="Nome completo" id="nomeCadastro" required>
+        <input type="email" placeholder="E-mail" id="emailCadastro" required>
+        <input type="date" id="nascimentoCadastro" required>
+        <input type="text" placeholder="Registro Acadêmico" id="matriculaCadastro" required>
+        <input type="password" placeholder="Crie uma senha" id="senhaCadastro" required>
+        <div id="strength" class="strength"></div>
+        <button onclick="registrar()">Cadastrar</button>
+        <div class="switch">Já tem conta? <span onclick="flipCard()">Login</span></div>
+    </div>
+</div>
+
+<div id="toast" class="toast"></div>
+
+<script src="/js/login.js"></script>
+</body>
+</html>

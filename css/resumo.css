@@ -1,0 +1,223 @@
+.resumo-content {
+    position: relative;
+    top: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+
+.resumo-text-content,
+.resumo-img {
+    cursor: default;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.resumo-text-content h2 {
+    text-shadow: 0 0.5rem 0.3rem rgba(57, 57, 57, 0.703);
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem solid;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-weight: 900;
+    color: var(--white-color);
+    margin-left: -0.2rem;
+}
+
+.resumo-text-content p {
+    margin-left: -10rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-size: 1.7rem;
+    text-align: left;
+}
+
+.resumo-img img {
+    margin-top: -12rem;
+    position: absolute;
+}
+
+#img1 {
+    margin-top: -15rem;
+    height: 20rem;
+    rotate: 18deg;
+    margin-left: 45rem;
+        transition:
+        transform 0.7s ease,
+        box-shadow 0.4s ease,
+        background 0.7s ease;
+
+}
+#img1:hover {
+    transform: translateY(-1rem) scale(1.04);
+
+}
+
+#img2 {
+    margin-top: -30rem;
+    height: 17rem;
+    margin-left: 35rem;
+        transition:
+        transform 0.7s ease,
+        box-shadow 0.4s ease,
+        background 0.7s ease;
+}
+#img2:hover {
+    transform: translateY(-1rem) scale(1.04);
+
+}
+
+#img3 {
+    margin-top: 10rem;
+    height: 25rem;
+    rotate: 15deg;
+    margin-left: 30rem;
+        transition:
+        transform 0.7s ease,
+        box-shadow 0.4s ease,
+        background 0.7s ease;
+}
+#img3:hover {
+    transform: translateY(-1rem) scale(1.04);
+
+}
+
+
+#img4 {
+    margin-top: -4rem;
+    height: 20rem;
+    rotate: -20deg;
+    margin-left: 16rem;
+        transition:
+        transform 0.7s ease,
+        box-shadow 0.4s ease,
+        background 0.7s ease;
+}
+#img4:hover {
+    transform: translateY(-1rem) scale(1.04);
+
+}
+
+#img5 {
+    border-radius: 3rem;
+    margin-top: -30rem;
+    height: 15rem;
+    rotate: -20deg;
+    margin-left: 23rem;
+        transition:
+        transform 0.7s ease,
+        box-shadow 0.4s ease,
+        background 0.7s ease;
+}
+#img5:hover {
+    transform: translateY(-1rem) scale(1.04);
+
+}
+
+
+
+
+
+
+.resumo-content2 {
+    position: relative;
+    top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.resumo-text-content2 {
+    margin-right: -15rem;
+}
+
+.resumo-text-content2 {
+    padding-left: 8rem;
+    text-align: left;
+}
+
+.resumo-text-content2,
+.resumo-img2 {
+    cursor: default;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+}
+
+.resumo-text-content2 h2 {
+    text-shadow: 0 0.5rem 0.3rem rgba(57, 57, 57, 0.703);
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem solid;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-weight: 900;
+    color: var(--white-color);
+}
+
+
+
+.resumo-text-content2 p {
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-size: 1.7rem;
+    text-align: left;
+}
+
+
+.resumo-img2 img {
+    margin-left: -20rem;
+    margin-top: -5rem;
+    position: absolute;
+    width: auto;
+    height: 30rem;
+    transition: 
+        transform 0.7s ease,
+        box-shadow 0.4s ease,
+        background 0.7s ease;
+}
+
+.resumo-img2,img:hover {
+    transform: translateY(-1rem) scale(1.04);
+}
+
+
+
+
+
+#img-discord {
+    margin-top: -20rem;
+    margin-left: 20rem;
+    transition:
+        transform 0.7s ease,
+        box-shadow 0.4s ease,
+        background 0.7s ease;
+}
+
+#img-discord:hover {
+    transform: translateY(-1rem) scale(1.04);
+}
+
+
+
+#chapeu-universidade {
+    rotate: -15deg;
+    margin-left: -12rem;
+    width: auto;
+    height: 30rem;
+    transition:
+        transform 0.7s ease,
+        box-shadow 0.4s ease,
+        background 0.7s ease;
+}
+
+#chapeu-universidade:hover {
+    transform: translateY(-1rem) scale(1.04);
+
+}
