@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unicheck Unisales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="/CSS_interno/inicio.css">
+    <link rel="stylesheet" href="/CSS_interno/checklist.css">
+    <link rel="stylesheet" href="/CSS_interno/checklistP.css">
+    <link rel="stylesheet" href="/CSS_interno/TOTVS.css">
+    <link rel="stylesheet" href="/CSS_interno/notificação.css">
+    <link rel="stylesheet" href="/CSS_interno/Plataforma.css">
+    <link rel="stylesheet" href="/CSS_interno/ajuda.css">
+</head>
+
+<body>
+
+    <div id="sidebar">
+        <button id="toggleSidebar" class="toggle-btn">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <h2><span class="label">🎓 UNI</span>CHECK 🎓</h2>
+
+        <div class="user-profile">
+            <div class="avatar">J</div>
+            <span class="label username">Juan Pablo</span>
+        </div>
+
+        <div class="carousel">
+            <div class="carousel-item active" data-target="inicio-section">
+                <i class="top fas fa-house"></i>
+                <span class="label">Início</span>
+            </div>
+            <div class="carousel-item" data-target="academico-section">
+                <i class="fas fa-graduation-cap"></i>
+                <span class="label">Checklists Acadêmico</span>
+            </div>
+            <div class="carousel-item" data-target="plataformas-checklist-section">
+                <i class="fas fa-list-check"></i>
+                <span class="label">Checklists Plataformas</span>
+            </div>
+            <div class="carousel-item" data-target="notificacoes-section">
+                <i class="fas fa-bell"></i>
+                <span class="label">Notificações</span>
+            </div>
+            <div class="carousel-item" data-target="plataformas-recursos-section">
+                <i class="fas fa-globe"></i>
+                <span class="label">Plataformas</span>
+            </div>
+            <div class="carousel-item" data-target="ajuda-section">
+                <i class="fas fa-circle-question"></i>
+                <span class="label">Ajuda e Suporte</span>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <i class="fas fa-sign-out-alt"></i>
+            <a href="/index.html"><span class="label">Sair</span></a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <section id="inicio-section" class="content-section active">
+            <div class="welcome-section">
+                <h1>Bem-vindo ao <span>UNICHECK</span>.</h1>
+                <p>Sua confiança começa agora. Unicheck: A plataforma que valida a originalidade e enriquece a qualidade
+                    da sua informação.</p>
+            </div>
+
+            <div class="search-container">
+                <input type="text" placeholder="🔍 Buscar relatórios, documentos ou dados...">
+            </div>
+
+            <section class="cards-container mt-10">
+                <div class="card card1">
+                    <div class="card-text">
+                        <h3>Checklists dinâmicos</h3>
+                        <p>Aprenda se divertindo com nossos checklists e tenha uma rotina mais saudável e descontraída.
+                        </p>
+                    </div>
+                </div>
+                <div class="card card2">
+                    <div class="card-text">
+                        <h3>Notificações</h3>
+                        <p>Fique de olho em eventos, alertas e muito mais. O UniCheck te avisa sobre tudo no ambiente
+                            acadêmico.</p>
+                    </div>
+                </div>
+                <div class="card card3">
+                    <div class="card-text">
+                        <h3>Plataformas</h3>
+                        <p>Saiba sobre as plataformas que você estudante tem desconto e gratuidade, além de IAs
+                            gratuitas.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+
+
+        <section id="academico-section" class="content-section">
+            <h1 class="titulo-fase">Bem Vindo ao Checklists Acadêmicos</h1>
+
+            <div class="fase-container">
+                <div class="fase-card ativo" data-target="totvs-checklist-section">
+                    <img src="/img/TOTVS.jpg" alt="Fase 1">
+                    <div class="fase-info" id="fase1">
+                        <h2>Fase 1 - Portal Acadêmico TOTVS</h2>
+                        <p>Primeiros passos do ambiente virtual da Unisales, Aqui você verá sobre TOTVS, seu portal do
+                            aluno, onde tem suas notas e informações.</p><br><br>
+                        <div class="progresso">
+                            <div class="barra" style="width: 40%;"><b>40%</b></div>
+                        </div>
+                        <span class="num-fase">1</span>
+                    </div>
+                </div>
+
+                <div class="fase-card bloqueada">
+                    <img src="/img/outlook.png" alt="Fase 2" id="logo-outlook">
+                    <div class="lock-overlay"><i class="fas fa-lock "></i></div>
+                    <div class="fase-info">
+                        <h2>Fase 2 - Email Acadêmico</h2>
+                        <p>Aqui nesse passo você verá como criar seu Email estudantíl, que você poderá usar para
+                            conseguir plataformas com desconto ou gratuidade. Além de precisar dele para entrar em
+                            platafromas da universidade da Unisales........</p><br>
+                        <div class="progresso">
+                            <div class="barra" style="width: 0%;"></div>
+                        </div>
+                        <span class="num-fase">2</span>
+                    </div>
+                </div>
+
+                <div class="fase-card bloqueada">
+                    <img src="/img/platafromaA.png" alt="Fase 3">]
+                    <div class="lock-overlay"><i class="fas fa-lock "></i></div>
+                    <div class="fase-info" id="fase 3">
+                        <h2>Fase 3 - Plataforma AVA</h2>
+                        <p>Platafroma onde voce verá seus progresso de aulas na Unisales, alem de ver nota e poder falar
+                            com os professores</p><br><br><br><br>
+                        <div class="progresso">
+                            <div class="barra" style="width: 0%;"></div>
+                        </div>
+                        <span class="num-fase">3</span>
+                    </div>
+                </div>
+
+                <div class="fase-card bloqueada">
+                    <img src="/img/bibliotecaV.png" alt="Fase 4">
+                    <div class="lock-overlay"><i class="fas fa-lock "></i></div>
+                    <div class="fase-info">
+                        <h2>Fase 4 - Biblioteca Virtual</h2>
+                        <p>aqui você aluno poderá usar a biblioteca virtual da sua universidade, e te ensinamos passo a
+                            passso de como usar.</p><br><br><br><br>
+                        <div class="progresso">
+                            <div class="barra" style="width: 0%;"></div>
+                        </div>
+                        <span class="num-fase">4</span>
+                    </div>
+                </div>
+
+                <div class="fase-card bloqueada">
+                    <img src="/img/platafromaa+.jpeg" alt="Fase 5">
+                    <div class="lock-overlay"><i class="fas fa-lock "></i></div>
+                    <div class="fase-info">
+                        <h2>Fase 5 - Platafroma A+</h2>
+                        <p>Aqui te ensinaremos a como usar o APP da platafroma AVA, segue o passo a passo.</p>
+                        <br><br><br><br><br>
+
+                        <div class="progresso">
+                            <div class="barra" style="width: 0%;"></div>
+                        </div>
+                        <span class="num-fase">5</span>
+                    </div>
+                </div>
+
+                <div class="fase-card bloqueada">
+                    <img src="/img/MicrosoftT.png" alt="Fase 6">
+                    <div class="lock-overlay"><i class="fas fa-lock "></i></div>
+                    <div class="fase-info">
+                        <h2>Fase 6 - Mycrosoft TEAMS</h2>
+                        <p>Aqui te ensinaremos passo a passo de como ter e usar sua Mycrosoft TEAMS, que serve para se
+                            comunicar com professores.</p><br><br><br><br>
+                        <div class="progresso">
+                            <div class="barra" style="width: 0%;"></div>
+                        </div>
+                        <span class="num-fase">6</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="totvs-checklist-section" class="content-section">
+            <div class="step-by-step-checklist">
+
+                <h2 class="checklist-titulo">Portal Acadêmico TOTVS: Guia Rápido</h2>
+                <p class="checklist-descricao">Siga os passos abaixo para configurar seu primeiro acesso e começar a
+                    usar o
+                    portal acadêmico.</p>
+
+                <div class="checklist-item concluido">
+                    <div class="item-status">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="item-content">
+                        <h3>1. Localizar Credenciais</h3>
+                        <p>Verifique o e-mail de boas-vindas da Unisales para encontrar seu **RA (Registro Acadêmico)**
+                            e a
+                            senha inicial de acesso ao sistema TOTVS.</p>
+                        <div class="item-visual1">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checklist-item em-progresso">
+                    <div class="item-status">
+                        <i class="fas fa-dot-circle"></i>
+                    </div>
+                    <div class="item-content">
+                        <h3>2. Acessar o Link do Portal</h3>
+                        <p>Clique no link oficial:<a
+                                href="https://inspetoriasao142819.rm.cloudtotvs.com.br/FrameHTML/Web/App/Edu/PortalEducacional/login/">https://inspetoriasao142819.rm.cloudtotvs.com.br/FrameHTML/Web/App/Edu/PortalEducacional/login/</a>
+                            do Portal do Aluno TOTVS (ou digite-o no seu navegador). Use o RA como
+                            login e a senha inicial fornecida.</p>
+                        <div class="item-visual" style="width: 50%;">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checklist-item pendente">
+                    <div class="item-status">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <div class="item-content">
+                        <h3>3. Definir Nova Senha</h3>
+                        <p>Por segurança, o sistema pedirá que você defina uma nova senha. Escolha uma senha forte com
+                            letras, números e símbolos.</p>
+                        <small>✅ Requisito: Mínimo 8 caracteres.</small>
+                    </div>
+                </div>
+
+                <div class="checklist-item pendente">
+                    <div class="item-status">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <div class="item-content">
+                        <h3>4. Verificar Matrícula e Disciplinas</h3>
+                        <p>Confirme se todas as suas informações pessoais, a grade curricular e as disciplinas do
+                            semestre
+                            estão exibidas corretamente no dashboard.</p>
+                    </div>
+                </div>
+
+                <div class="checklist-footer">
+                    <button class="btn-concluido">
+                        <i class="fas fa-trophy"></i> Concluir Fase e Desbloquear Próxima!
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+        <section id="plataformas-checklist-section" class="content-section">
+            <h1 class="titulo-fase">Bem Vindo ao Checklists de Plataformas</h1>
+
+            <div class="fase-container">
+                <div class="fase-card ativo">
+                    <img src="/img/spotify.png" alt="Fase 1">
+                    <div class="fase-info" id="fase1">
+                        <h2>Fase 1 - Spotify de estudande</h2>
+                        <p>Descubra como pegar o spotify para universitários.</p><br><br><br><br><br>
+                        <div class="progresso">
+                            <div class="barra" style="width: 70%;"><b>80%</b></div>
+                        </div>
+                        <span class="num-fase">1</span>
+                    </div>
+                </div>
+
+                <div class="fase-card ativo">
+                    <img src="/img/perplexity.avif" alt="Fase 2" id="logo-outlook">
+                    <div class="fase-info">
+                        <h2>Fase 2 - IA Perplexity gratuito</h2>
+                        <p>Ta esperando oque? Venha pegar seu Perplexity de graça.</p><br><br><br><br><br>
+                        <div class="progresso">
+                            <div class="barra" style="width: 0%;"></div>
+                        </div>
+                        <span class="num-fase">2</span>
+                    </div>
+                </div>
+
+                <div class="fase-card ativo">
+                    <img src="/img/gemini.png" alt="Fase 3">
+                    <div class="fase-info">
+                        <h2>Fase 3 - IA gemini gratuita</h2>
+                        <p>Ta esperando oque? Venha pegar sua gemini de graça.</p><br><br><br><br><br>
+                        <div class="progresso">
+                            <div class="barra" style="width: 0%;"></div>
+                        </div>
+                        <span class="num-fase">3</span>
+                    </div>
+                </div>
+
+                <div class="fase-card ativo">
+                    <img src="/img/github.png" alt="Fase 4">
+                    <div class="fase-info">
+                        <h2>Fase 4 - Github para estudante</h2>
+                        <p>Venha ter seu git hub de estudante.</p><br><br><br><br><br>
+                        <div class="progresso">
+                            <div class="barra" style="width: 0%;"></div>
+                        </div>
+                        <span class="num-fase">4</span>
+                    </div>
+                </div>
+
+                <div class="fase-card ativo">
+                    <img src="/img/figma.avif" alt="Fase 5">
+                    <div class="fase-info">
+                        <h2>Fase 5 - Figma para estudante</h2>
+                        <p>Como adiquirir figama para estudante.</p>
+                        <br><br><br><br><br>
+
+                        <div class="progresso">
+                            <div class="barra" style="width: 0%;"></div>
+                        </div>
+                        <span class="num-fase">5</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section id="notificacoes-section" class="content-section">
+            <h1 class="titulo-not">🔔 Suas Notificações e Alertas</h1>
+            <p class="notificacoes-descricao">Fique por dentro de eventos, alertas acadêmicos e novidades da Unisales.
+            </p>
+
+            <div class="notifications-container">
+
+                <div class="notification-card urgente">
+                    <div class="notif-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                    <div class="notif-info">
+                        <h3>Prazo Final: Envio de Atividades AV1</h3>
+                        <p>O prazo para o envio das atividades de Avaliação 1 (AV1) se encerra em **48 horas**. Acesse a
+                            Plataforma AVA imediatamente!</p>
+                        <small>Publicado: 09/11/2025</small>
+                    </div>
+                    <a href="#" class="notif-action-btn">Ver Detalhes</a>
+                </div>
+
+                <div class="notification-card evento">
+                    <div class="notif-icon"><i class="fas fa-calendar-alt"></i></div>
+                    <div class="notif-info">
+                        <h3>Semana Acadêmica de Inovação</h3>
+                        <p>Participe de workshops e palestras com foco em IA e Empreendedorismo. Garanta seu certificado
+                            de horas complementares!</p>
+                        <small>Data: 20 a 24 de Novembro</small>
+                    </div>
+                    <a href="#" class="notif-action-btn">Inscrever-se</a>
+                </div>
+
+                <div class="notification-card destaque">
+                    <div class="notif-icon"><i class="fas fa-rocket"></i></div>
+                    <div class="notif-info">
+                        <h3>🎉 NOVIDADE: Lançamento do UniDocs AI</h3>
+                        <p>Uma nova plataforma de inteligência artificial para auxiliar na revisão de trabalhos
+                            acadêmicos e referências ABNT. **Acesso gratuito para alunos!**</p>
+                        <small>Disponível a partir de: 15/11/2025</small>
+                    </div>
+                    <a href="#" class="notif-action-btn primary-btn">Conhecer o UniDocs AI</a>
+                </div>
+
+                <div class="notification-card geral">
+                    <div class="notif-icon"><i class="fas fa-info-circle"></i></div>
+                    <div class="notif-info">
+                        <h3>Aviso: Período de Recesso e Férias</h3>
+                        <p>O calendário acadêmico de 2026 já está disponível no Portal TOTVS. Planeje suas férias!</p>
+                        <small>Publicado: 01/11/2025</small>
+                    </div>
+                    <a href="#" class="notif-action-btn">Acessar Calendário</a>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section id="plataformas-recursos-section" class="content-section">
+            <h1 class="titulo-plat">🚀 Plataformas e Recursos Estudantis</h1>
+            <p class="plataformas-descricao">Descubra ferramentas gratuitas ou com desconto para estudantes. Use seu
+                e-mail acadêmico para desbloquear benefícios!</p>
+
+            <div class="platforms-container">
+
+                <a href="#" class="platform-item">
+                    <div class="platform-circle">
+                        <img src="/img/mycrosoft365.png" alt="Microsoft 365 Logo" style="width: 15rem;">
+                    </div>
+                    <span class="platform-name">Microsoft 365</span>
+                </a>
+
+                <a href="#" class="platform-item">
+                    <div class="platform-circle">
+                        <img src="/img/github.png" alt="GitHub Logo" style="width: 10rem;">
+                    </div>
+                    <span class="platform-name">GitHub Student</span>
+                </a>
+
+                <a href="#" class="platform-item">
+                    <div class="platform-circle">
+                        <img src="/img/canva.webp" alt="Canva Logo" style="border-radius: 50%; width: 20rem; ">
+                    </div>
+                    <span class="platform-name">Canva Pro</span>
+                </a>
+
+                <a href="#" class="platform-item">
+                    <div class="platform-circle">
+                        <img src="/img/spotify.png" alt="Spotify Logo">
+                    </div>
+                    <span class="platform-name">Spotify Premium</span>
+                </a>
+
+                <a href="#" class="platform-item">
+                    <div class="platform-circle">
+                        <img src="/img/MicrosoftT.png" alt="ChatGPT Logo">
+                    </div>
+                    <span class="platform-name">Mycrosoft TEAMS</span>
+                </a>
+
+                <a href="#" class="platform-item">
+                    <div class="platform-circle">
+                        <img src="/img/figma.avif" alt="Google Workspace Logo">
+                    </div>
+                    <span class="platform-name">Figma</span>
+                </a>
+            </div>
+        </section>
+
+
+        <section id="ajuda-section" class="content-section">
+            <h1 class="titulo-ajuda">❓ Ajuda e Suporte</h1>
+            <p class="plataformas-descricao">Encontre a resposta rápida que você precisa ou fale diretamente com a
+                equipe de suporte acadêmico.</p>
+
+            <div class="suporte-container">
+
+                <div class="suporte-card info-card">
+                    <i class="fas fa-comment-dots"></i>
+                    <h3>Perguntas Frequentes (FAQ)</h3>
+                    <p>Acesse nossa base de conhecimento para encontrar respostas imediatas sobre plataformas, matrícula
+                        e prazos.</p>
+                    <a href="#" class="suporte-btn">Acessar FAQ</a>
+                </div>
+
+                <div class="suporte-card info-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Fale com o Suporte</h3>
+                    <p>Se precisar de ajuda especializada, entre em contato via chat online ou envie um e-mail para o
+                        nosso time.</p>
+                    <a href="mailto:suporte@unisales.edu.br" class="suporte-btn">Enviar E-mail</a>
+                </div>
+
+                <div class="suporte-card info-card">
+                    <i class="fas fa-location-arrow"></i>
+                    <h3>Horários e Localização</h3>
+                    <p>Veja os horários de atendimento da secretaria, biblioteca e laboratórios no seu campus.</p>
+                    <a href="#" class="suporte-btn">Ver Detalhes</a>
+                </div>
+
+            </div>
+        </section>
+
+
+
+    </div>
+
+    <script src="/js/Usuario.js"></script>
+</body>
+
+</html>

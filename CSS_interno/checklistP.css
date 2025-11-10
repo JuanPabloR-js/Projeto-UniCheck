@@ -1,0 +1,115 @@
+/* === CHECKLIST ACADÊMICO === */
+.titulo-fase {
+    margin-left: 10rem;
+    margin-top: 7rem;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(90deg, #0066ff 20%, #ff0033 100%);
+    -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: #0066ff;  
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+.fase-container {
+    /* Centraliza o contêiner no meio da tela */
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto; 
+    padding: 2rem 0; /* Adiciona algum espaço vertical */
+
+    display: grid;
+    /* Grid Responsivo: Mínimo de 300px, preenchendo o espaço */
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); 
+    gap: 5rem;
+    justify-items: center;
+}
+
+.fase-card {
+    position: relative;
+    
+    width:100%; 
+    min-height: 40rem; /* Garante que os cards tenham uma altura mínima uniforme */
+
+    background: var(--bg-card, #ffffff);
+    border-radius: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.281);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.fase-card img {
+    width: 100%;
+    height: 18rem; /* Altura da imagem */
+    object-fit: cover;
+    
+}
+
+.fase-card .fase-info {
+    padding: 1.5rem; /* Ajustado para melhor visual */
+    text-align: left; /* Centralizado ou alinhado à esquerda conforme preferir */
+}
+
+.fase-card h2 {
+    font-size: 2rem;
+    color: var(--accent-blue, #0066ff);
+    margin-bottom: 0.5rem;
+}
+
+.fase-card p {
+    color: var(--text-sec, #1d1d1d);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    min-height: 4rem; /* Ajuda a manter a altura consistente */
+}
+
+.progresso {
+    width: 100%;
+    height: 1.5rem;
+    background: #e0e0e0;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.barra {
+    text-align: center;
+    color: white;
+    height: 100%;
+    background: linear-gradient(90deg, #0066ff, #ff0033);
+    transition: width 0.4s ease;
+}
+
+.num-fase {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--accent-red, #ff0033);
+}
+
+/* --- Bloqueadas --- */
+.fase-card.bloqueada {
+    filter: blur(0.3rem) brightness(0.7);
+    position: relative;
+    cursor: not-allowed;
+    pointer-events: none; /* Impede o clique em bloqueados */
+}
+
+.lock-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    color: var(--accent-red, #ff0033);
+    z-index: 2;
+}
+
+.fase-card.ativo:hover {
+    transform: translateY(-3rem);
+    box-shadow: 0 1rem 3rem rgba(0, 102, 255, 0.884);
+}

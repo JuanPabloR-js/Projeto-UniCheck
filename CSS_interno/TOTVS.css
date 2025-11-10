@@ -1,0 +1,137 @@
+/* === ESTILOS GERAIS DA SESSÃO CHECKLIST === */
+.step-by-step-checklist {
+    width: 90%;
+    max-width: 80rem;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: #fdfdff;
+    border-radius: 1.5rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.08);
+}
+
+.checklist-titulo {
+    font-size: 3rem;
+    color: var(--accent-blue, #0066ff);
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.checklist-descricao {
+    font-size: 1.5rem;
+    color: var(--text-sec, #555);
+    text-align: center;
+    margin-bottom: 3rem;
+    border-bottom: 0.1rem solid #eee;
+    padding-bottom: 1.5rem;
+}
+
+/* === ESTILOS DOS ITENS INDIVIDUAIS === */
+.checklist-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+    border-left: 0.5rem solid;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.item-status i {
+    font-size: 2.5rem;
+    min-width: 2.5rem;
+}
+
+.item-content {
+    flex-grow: 1;
+}
+
+.item-content h3 {
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.item-content p {
+    font-size: 1.4rem;
+    color: var(--text-sec, #444);
+    margin-bottom: 1rem;
+}
+
+.item-visual1 {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #28a745;
+    text-align: center;
+    border-radius: 0.8rem;
+    color: #888;
+    font-style: italic;
+}
+
+.item-visual {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #0066ff;
+    text-align: center;
+    border-radius: 0.8rem;
+    color: #888;
+    font-style: italic;
+}
+
+/* --- ESTADOS VISUAIS --- */
+
+/* Concluído (Verde) */
+.checklist-item.concluido {
+    border-color: #28a745;
+    background: rgba(40, 167, 69, 0.05);
+}
+.checklist-item.concluido .item-status i {
+    color: #28a745;
+}
+
+/* Em Progresso (Azul/Destaque) */
+.checklist-item.em-progresso {
+    border-color: var(--accent-blue, #0066ff);
+    background: var(--active-bg, rgba(0, 102, 255, 0.05));
+    box-shadow: 0 0 10px rgba(0, 102, 255, 0.1);
+}
+.checklist-item.em-progresso .item-status i {
+    color: var(--accent-blue, #0066ff);
+}
+
+/* Pendente (Cinza) */
+.checklist-item.pendente {
+    border-color: #ccc;
+    background: #fafafa;
+}
+.checklist-item.pendente .item-status i {
+    color: #ccc;
+}
+
+/* === BOTÃO DE CONCLUSÃO === */
+.checklist-footer {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.btn-concluido {
+    background: linear-gradient(90deg, #0066ff, #ff0033);
+    color: white;
+    padding: 1.5rem 3rem;
+    border: none;
+    border-radius: 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0.4rem 1.5rem rgba(0, 102, 255, 0.4);
+}
+
+.btn-concluido:hover {
+    transform: translateY(-3px);
+    box-shadow: 1rem 1rem rgba(0, 102, 255, 0.6);
+}
+
+.btn-concluido i {
+    margin-right: 1rem;
+}

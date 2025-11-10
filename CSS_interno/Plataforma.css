@@ -1,0 +1,74 @@
+/* --- SEÇÃO PLATAFORMAS E RECURSOS --- */
+
+.plataformas-descricao {
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--text-sec, #666);
+    margin-bottom: 50px;
+}
+
+.platforms-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+    /* Layout Grid para os círculos */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.platform-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text, #000);
+    transition: transform 0.3s ease;
+}
+
+.platform-item:hover {
+    transform: translateY(-8px);
+    color: var(--accent-blue, #0066ff);
+}
+
+.platform-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: var(--bg-card, #fff);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 15px; /* Espaço para o ícone */
+}
+
+.platform-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.platform-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.titulo-plat {
+    margin-left:-1rem;
+    margin-top: 7rem;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(90deg, #0066ff 20%, #ff0033 100%);
+    -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: #0066ff;  
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
