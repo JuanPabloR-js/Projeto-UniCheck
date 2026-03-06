@@ -40,4 +40,3 @@ Interface simples e intuitiva para navegação.
 Juan Pablo
 GitHub: JuanPabloE-js
 
-Se você quiser, posso criar uma versão ainda mais profissional, com badges, imagens, instruções de contribuição e deploy, que deixaria seu GitHub com cara de projeto grande e chamativo.
