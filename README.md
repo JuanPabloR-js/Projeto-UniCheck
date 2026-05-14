@@ -38,5 +38,5 @@ Interface simples e intuitiva para navegação.
 👨‍💻 Autor
 
 Juan Pablo
-GitHub: JuanPabloE-js
+GitHub: JuanPabloR-js
 
